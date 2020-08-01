@@ -1,0 +1,317 @@
+
+//main site font
+@font-face {
+    font-family: ubuntu;
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+
+
+//Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ubuntu;
+    text-transform: capitalize;
+    
+}
+
+
+//Start Header
+    .header {
+        background-image: url('../images/header.jpg');
+        background-size: cover;
+        text-align: center;
+        position: relative;
+        height: 300px;
+        color: #fff;
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(1,1,1, .5);
+
+            h1 {
+                margin-top: 65px;
+                margin-bottom: 20px;
+            }
+
+            .plan {
+                border: 2px solid #fff;
+                float: left;
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 20px;
+
+            }
+            .more {
+                border: 2px solid #fff;
+                padding: 10px;
+                
+            }
+        }
+    }
+    /* Small devices (portrait tablets and large phones, 480px and up) */
+    @media (min-width: 480px) {
+
+        .plan {
+            width: 49% !important;
+        }
+
+        .plan:first-of-type {
+            margin-right: 2%;
+        }
+    } 
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media (min-width: 768px) {    
+        h1 {
+            font-size: 40px;
+        }
+    } 
+
+    /* Large devices (large laptops and desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+        
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+//End Header
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Start Features
+    .features {
+        color: #555;
+
+        .feature {
+            margin: 5px 0;
+            width: 100%;
+            float: left;
+            padding: 10px 15px;
+            h2 {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+            p {
+                line-height: 20px;
+            }
+        }
+    }
+
+    /* Small devices (portrait tablets and large phones, 480px and up) */
+    @media (min-width: 480px) {
+
+        .feature {
+            margin: 5px 0 !important;
+        }
+
+        .feature:first-of-type {
+            width: 100%;
+        }
+        .feature:not(:first-of-type) {
+            width: 50%;
+        }
+
+        .feature h2 {
+            text-align: start !important;
+        }
+    } 
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media (min-width: 768px) {
+        .features .feature {
+            width: calc( (100%)/3 ) ;
+        }
+    } 
+
+    /* Large devices (large laptops and desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+    }
+//End Features
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//About Us division has no style
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Start Our Works
+.our-works {
+    padding: 5px;
+    .image {
+        padding: 10px;
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 6px #999;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media (min-width: 480px) {
+    .our-works {
+        padding: 5px;
+        .image {
+            width: 50%;
+            float: left;
+        }
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .our-works {
+        .image {
+            width: calc( (100%)/3 );
+        }
+    }
+} 
+
+/* Large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .our-works {
+        padding: 40px !important;
+        .image {
+            width: 25%;
+        }
+    }
+
+}
+//End Our Works
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Start our plans 
+.pricing-plan {
+    .plan {
+        border: 2px solid #ccc;
+        margin-bottom: 20px;
+        line-height: 24px;
+        padding: 10px;
+        span {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+    .plan:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media (min-width: 480px) {
+    .pricing-plan{
+        .plan {
+            margin: auto;
+        }
+
+        .plan.premuim {
+            margin-right: 2%;
+        }
+
+        .plan:not(:first-of-type) {
+            float: left;
+            width: 48%;
+            margin-top: 2%;
+        }
+
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .pricing-plan {
+        
+        .plan:not(:last-of-type) {
+            margin-right: 2% !important;
+        }
+        .plan {
+            float: left;
+            width: calc( (96%)/3 ) !important;
+            margin: 0 !important;
+        }
+    }
+} 
+
+/* Large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+//End our plans 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Start General Media
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media (min-width: 480px) {
+    .hidden-sm {
+        display: block !important;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 738px;
+    }
+} 
+
+/* Large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+}
+//End General Media
+
+
+
+/* most used properties */
+.container { 
+    margin: auto;
+    padding: 0 15px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.official-line-height {
+    line-height: 20px;
+}
+
+.official-padding {
+    padding: 40px 0;
+}
+
+.hidden-sm {
+    display: none;
+}
+
+.dark-bg {
+    background-color: #555;
+}
+
+.light-text {
+    color: #ccc;
+}
